@@ -52,7 +52,7 @@ function renderEvents() {
     card.innerHTML = `
       <button class="delete-btn" data-action="delete">×</button>
       <h3 class="event-title">${ev.title}</h3>
-      <p class="event-date">📅 ${ev.date}</p>
+      <p class="event-date">${ev.date}</p>
       <span class="badge ${badgeClass(ev.category)}">${ev.category}</span>
       <p class="event-desc">${ev.desc}</p>
       <button class="btn light" data-action="toggle">Mark ${ev.completed ? "Uncompleted" : "Completed"}</button>
@@ -165,4 +165,5 @@ document.addEventListener("keydown", (e) => {
 
   
   pressedKey.style.color = "#111";
+
 });
